@@ -19,19 +19,6 @@
 // }
 
 public class Que_2 {
-    public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4};
-        int k = 3; // specify the number of rotations
-        rotate(arr, k);
-
-        System.out.println("After " + k + " time Rotation: ");
-        
-        // Print the rotated array using a traditional for loop
-        for (int i = 0; i < arr.length; i++) {
-            
-            System.out.print(arr[i] + " ");
-        }
-    }
 
     public static void rotate(int[] arr, int k){
         int length = arr.length;
@@ -58,6 +45,20 @@ public class Que_2 {
 
             start++;
             end--;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4};
+        int k = 3; // specify the number of rotations
+        rotate(arr, k);
+
+        System.out.println("After " + k + " time Rotation: ");
+        
+        // Print the rotated array using a traditional for loop
+        for (int i = 0; i < arr.length; i++) {
+            
+            System.out.print(arr[i] + " ");
         }
     }
 }
