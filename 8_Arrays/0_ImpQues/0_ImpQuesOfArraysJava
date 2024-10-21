@@ -1,0 +1,180 @@
+// Mixed Questions of "Arrays" "2DArrays" and "ArrayList".
+
+1. Arrays
+
+
+A -> Find the Largest and Smallest Element in an Array:
+
+Problem Statement: Tumhe ek array diya gaya hai, usme se largest aur smallest element find karna hai.
+Example: Input: [3, 5, 7, 2, 8] -> Output: Largest = 8, Smallest = 2
+
+Key Concepts: Array traversal, comparison.
+Tip: Ek loop mein hi maximum aur minimum values ko track kar sakte ho.
+
+
+B -> Rotate an Array to the Right by K Steps:
+
+Problem Statement: Tumhe ek array diya gaya hai aur ek integer K, tumhe array ko K steps right mein rotate karna hai.
+Example: Input: [1, 2, 3, 4, 5], K = 2 -> Output: [4, 5, 1, 2, 3]
+
+Key Concepts: Array manipulation, modular arithmetic.
+Tip: Array ko split kar ke do alag-alag parts mein reverse karne ka try karo.
+
+
+C -> Find the Missing Number in an Array:
+
+Problem Statement: Ek array diya hai jo 1 se n tak ke numbers ko contain karta hai, but usme ek number missing hai. Tumhe wo number find karna hai.
+Example: Input: [1, 2, 4, 5, 6] -> Output: 3
+
+Key Concepts: Mathematical approach (sum of n natural numbers), XOR.
+Tip: n*(n+1)/2 ka sum nikal ke array sum se subtract kar lo, ya phir XOR operation use karo.
+
+
+D -> Find the Maximum Product of Two Integers in an Array:
+
+Problem Statement: Tumhe ek array diya gaya hai, usme se do integers aise find karna hai jinka product maximum ho.
+Example: Input: [1, 20, 3, 4, 5] -> Output: 20 * 5 = 100
+
+Key Concepts: Sorting, linear scan.
+Tip: Array ko sort karke last ke do elements ka product nikal lo.
+
+
+E -> Find the Number of Pairs with Given Sum:
+
+Problem Statement: Tumhe ek array diya gaya hai aur ek integer sum, tumhe number of pairs find karne hain jinka sum sum ke equal ho.
+Example: Input: [1, 5, 7, -1, 5], Sum = 6 -> Output: 2 (pairs: (1, 5), (7, -1))
+
+Key Concepts: HashMap, two-pointer approach.
+Tip: HashMap mein elements ke frequencies store karke pairs count kar sakte ho.
+
+
+F -> Rearrange Array Alternating Positive and Negative Numbers:
+
+Problem Statement: Tumhe ek array diya gaya hai jisme positive aur negative numbers hain, tumhe inko aise rearrange karna hai ki positive aur negative numbers alternate ho.
+Example: Input: [1, -2, 3, -4, 5, -6] -> Output: [1, -2, 3, -4, 5, -6]
+
+Key Concepts: Array rearrangement, extra space or in-place swap.
+Tip: Positive aur negative numbers ko alag-alag store kar ke phir merge karo.
+
+
+
+2. 2D Arrays (Matrix)
+
+
+A -> Print a 2D Array in Spiral Order:
+
+Problem Statement: Tumhe ek 2D array diya gaya hai, usko spiral order mein print karna hai.
+Example: Input: [[1, 2, 3], [4, 5, 6], [7, 8, 9]] -> Output: 1 2 3 6 9 8 7 4 5
+
+Key Concepts: Matrix traversal, four-directional movement.
+Tip: Four loops ke through boundaries shrink karte jao.
+
+
+B -> Transpose of a Matrix:
+
+Problem Statement: Tumhe ek square matrix diya gaya hai, uska transpose banana hai.
+Example: Input: [[1, 2, 3], [4, 5, 6], [7, 8, 9]] -> Output: [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+
+Key Concepts: Swapping elements, matrix traversal.
+Tip: Diagonal ke across elements ko swap kar lo.
+
+
+C -> Find the Row with Maximum 1s:
+
+Problem Statement: Tumhe ek sorted binary matrix diya gaya hai, find karo wo row jisme maximum 1s ho.
+Example: Input: [[0, 1, 1, 1], [0, 0, 1, 1], [1, 1, 1, 1]] -> Output: Row 3
+
+Key Concepts: Matrix traversal, binary search.
+Tip: Har row mein first 1 find kar lo aur row number track karo.
+
+
+D -> Rotate Matrix by 90 Degrees:
+
+Problem Statement: Tumhe ek square matrix diya gaya hai, usko 90 degrees rotate karna hai.
+Example: Input: [[1, 2, 3], [4, 5, 6], [7, 8, 9]] -> Output: [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+
+Key Concepts: Transpose and reverse columns.
+Tip: Pehle matrix ka transpose lo, phir har row ko reverse kar do.
+
+
+E -> Search in a Sorted 2D Matrix:
+
+Problem Statement: Tumhe ek sorted 2D matrix diya gaya hai jisme har row aur column sorted hai, tumhe ek element find karna hai.
+Example: Input: [[1, 3, 5], [7, 9, 11], [13, 15, 17]], Target = 9 -> Output: true
+
+Key Concepts: Binary search, matrix traversal.
+Tip: Top-right ya bottom-left se start karke search kar sakte ho.
+
+
+
+3. ArrayList
+
+
+A -> Remove Duplicates from an ArrayList:
+
+Problem Statement: Tumhe ek ArrayList diya gaya hai, usme se duplicates remove karna hai.
+Example: Input: [1, 2, 2, 3, 4, 4, 5] -> Output: [1, 2, 3, 4, 5]
+
+Key Concepts: HashSet, list operations.
+Tip: ArrayList ko HashSet mein convert kar lo aur phir back to ArrayList.
+
+
+B -> Sort an ArrayList:
+
+Problem Statement: Tumhe ek ArrayList diya gaya hai, usko ascending ya descending order mein sort karna hai.
+Example: Input: [3, 1, 4, 2] -> Output: [1, 2, 3, 4]
+
+Key Concepts: Collections framework.
+Tip: Collections.sort(list) ka use karo sorting ke liye.
+
+
+C -> Convert ArrayList to Array and Vice Versa:
+
+Problem Statement: Tumhe ek ArrayList ko array mein aur array ko ArrayList mein convert karna hai.
+Example: Input: [1, 2, 3, 4] -> Output: Array = {1, 2, 3, 4}
+
+Key Concepts: List to Array, Array to List conversion.
+Tip: list.toArray(new Integer[0]) aur Arrays.asList(array) ka use karo.
+
+
+D -> Find the Intersection of Two ArrayLists:
+
+Problem Statement: Tumhe do ArrayLists diye gaye hain, tumhe unka intersection find karna hai.
+Example: Input: [1, 2, 3, 4], [2, 4, 6, 8] -> Output: [2, 4]
+
+Key Concepts: Collection operations, retainAll method.
+Tip: list1.retainAll(list2) ka use karo intersection find karne ke liye.
+
+
+E -> Shuffle Elements of an ArrayList:
+
+Problem Statement: Tumhe ek ArrayList diya gaya hai, uske elements ko shuffle karna hai.
+Example: Input: [1, 2, 3, 4, 5] -> Output: [4, 1, 5, 3, 2] (Random output)
+
+Key Concepts: Randomization, Collections framework.
+Tip: Collections.shuffle(list) ka use karo.
+
+
+F -> Remove All Occurrences of a Specific Element in an ArrayList:
+
+Problem Statement: Tumhe ek ArrayList diya gaya hai, aur ek specific element ko ArrayList se remove karna hai (saare occurrences).
+Example: Input: [1, 2, 2, 3, 2, 4], Element to remove = 2 -> Output: [1, 3, 4]
+
+Key Concepts: List operations, iteration.
+Tip: list.removeAll(Collections.singleton(element)) ka use karo.
+
+
+G -> Find Sublist in an ArrayList:
+
+Problem Statement: Tumhe ek ArrayList di gayi hai, usme se ek sublist extract karni hai jo specific index range mein ho.
+Example: Input: [10, 20, 30, 40, 50], start = 1, end = 3 -> Output: [20, 30]
+
+Key Concepts: List slicing.
+Tip: list.subList(start, end) ka use karo.
+
+
+
+=> Practice Tips:
+Solve Multiple Variants: Har problem ka multiple versions solve karo, jaise different sizes of arrays ya matrices pe implement kar ke dekho.
+Optimize Your Solutions: Har question ke multiple solutions likho, jaise brute force, optimized, aur edge cases ke liye.
+Use Online Platforms: Practice karne ke liye platforms jaise LeetCode, HackerRank, aur GeeksforGeeks ka use karo.
