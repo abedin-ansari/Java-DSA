@@ -22,10 +22,6 @@
 // }
 
 public class ImpStringCompression {
-    public static void main(String[] args) {
-        String str = "aaabbcccc";
-        System.out.println(compress(str));
-    }
 
     public static String compress(String str) {
         StringBuilder newStr = new StringBuilder();  
@@ -48,5 +44,10 @@ public class ImpStringCompression {
             }
         }
         return newStr.toString(); // Pure loop ke baad, StringBuilder ko toString() method se convert karke
-    }                             // final compressed string return kar dete hain.
+    }      // final compressed string return kar dete hain.
+
+    public static void main(String[] args) {
+        String str = "aaabbcccc";
+        System.out.println(compress(str));
+    }
 }
