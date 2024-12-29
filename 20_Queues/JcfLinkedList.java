@@ -1,5 +1,7 @@
 import java.util.*;
 
+// Note: Queue can be implemented using LinkedList or ArrayDeque in Java
+// Queue<Type> queue = new LinkedList<>(); or Queue<Type> queue = new ArrayDeque<>();
 public class JcfLinkedList {
     public static void main(String[] args) {
         // Queue<Integer> q = new LinkedList<>();
